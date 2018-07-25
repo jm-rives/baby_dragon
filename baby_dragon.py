@@ -17,7 +17,7 @@ class DragonEgg(Dragon):
     maturation_level = 'neonate'
 
 class BabyDragon(Dragon):
-
+    maturation_level = 'child'
     pass
 
 class TeenDragon(Dragon):
