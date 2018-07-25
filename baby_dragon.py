@@ -13,12 +13,18 @@ class Dragon:
         self.fire = fire
         self.energy = energy
 
+    def snuggle(self, snuggle):
+        snuggle_meter = 5
+
 class DragonEgg(Dragon):
+
     maturation_level = 'neonate'
 
 class BabyDragon(Dragon):
+
     maturation_level = 'child'
-    pass
+
 
 class TeenDragon(Dragon):
-    pass
+
+    maturation_level = 'immature'
