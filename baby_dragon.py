@@ -9,6 +9,3 @@ class Dragon:
         self.cloaca = cloaca
         self.fire = fire
         self.energy = energy
-
-class BabyDragon:
-    pass
