@@ -13,12 +13,12 @@ class Dragon:
         self.fire = fire
         self.energy = energy
 
-class DragonEgg:
+class DragonEgg(Dragon):
     maturation_level = 'neonate'
 
-class BabyDragon:
-    
+class BabyDragon(Dragon):
+
     pass
 
-class TeenDragon:
+class TeenDragon(Dragon):
     pass
