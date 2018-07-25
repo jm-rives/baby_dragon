@@ -16,6 +16,11 @@ class Dragon:
     def snuggle(self, snuggle):
         snuggle_meter = 5
 
+        if snuggle_meter >= 3:
+            is_snuggled = True
+        else:
+            is_snuggled = False
+
 class DragonEgg(Dragon):
 
     maturation_level = 'neonate'
