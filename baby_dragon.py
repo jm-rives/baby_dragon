@@ -18,16 +18,3 @@ class Dragon:
             is_snuggled = True
         else:
             is_snuggled = False
-
-class DragonEgg(Dragon):
-
-    maturation_level = 'neonate'
-    
-class BabyDragon(Dragon):
-
-    maturation_level = 'child'
-
-
-class TeenDragon(Dragon):
-
-    maturation_level = 'immature'
