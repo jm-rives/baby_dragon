@@ -11,6 +11,9 @@ class Dragon:
         self.fire = fire
         self.energy = energy
 
+    def description(self, name, snuggled, sleep, hunger, cloaca, fire, energy):
+        pass
+        
     def snuggle(self, snuggle):
         snuggle_meter = 5
 
