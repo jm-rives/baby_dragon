@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 class Dragon:
 
-    maturation_level = 'mature'
-
     def __init__(self, name, snuggled, sleep, hunger, cloaca, fire, energy):
         self.name = name
         self.snuggled = snuggled
