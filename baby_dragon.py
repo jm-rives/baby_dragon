@@ -16,9 +16,17 @@ class Dragon:
         self.maturity = maturity
 
     # instance attribute
-    def time_passes():
-        pass
-        
+    def time_passes(self):
+        self.snuggled -= 1
+        self.sleep -= 1
+        self.hunger += 1
+        self.cloaca += 1
+        self.fire += 0.5
+        self.energy -= 0.5
+        self.maturity += 0.5
+
+
+
     def description(self):
         return """{} is snuggled at level {},
          has {} units of sleep,
@@ -30,11 +38,11 @@ class Dragon:
         self.hunger, self.cloaca,
          self.fire, self.energy, self.maturity)
 
-    def snuggle(self, snuggle):
-        pass
 
 # test code
 timmy = Dragon('Timmy', 5, 5, 0, 0, 0, 5, 1)
 
 print(timmy.name)
 print(timmy.description())
+print(timmy.time_passes())
+print("Your dragons current status is: ", timmy.description())
