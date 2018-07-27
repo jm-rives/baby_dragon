@@ -25,7 +25,17 @@ class Dragon:
         self.energy -= 0.5
         self.maturity += 0.5
 
+        return("Time has passed.")
 
+    def snuggle(self):
+        if self.snuggled < 5:
+            self.snuggled += 1
+            return ("""
+            Your dragon's snuggle meter
+            increased by 1 point to {} on a scale of zero to 5.
+            """.format(self.snuggled))
+        else:
+            return ("Your dragon's snuggle meter is FULL!")
 
     def description(self):
         return """{} is snuggled at level {},
@@ -42,7 +52,7 @@ class Dragon:
 # test code
 timmy = Dragon('Timmy', 5, 5, 0, 0, 0, 5, 1)
 
-print(timmy.name)
 print(timmy.description())
 print(timmy.time_passes())
+print(timmy.snuggle())
 print("Your dragons current status is: ", timmy.description())
