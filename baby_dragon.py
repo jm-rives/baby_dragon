@@ -35,10 +35,19 @@ class Dragon:
             increased by 1 point to {} on a scale of zero to 5.
             """.format(self.snuggled))
         else:
-            return ("Your dragon's snuggle meter is FULL!")
+            return("Your dragon's snuggle meter is FULL!")
 
     def sleep_dragon(self):
-        pass
+        if self.sleep < 3:
+            self.sleep += 1
+            return("""Your dragon slept,
+             their sleep increased by 1 point.
+             Their sleep meter is now {} on
+              a scale of zero to 5""".format(self.sleep))
+        else:
+            return("""Your dragon's sleep meter is {}
+            on a scale of zero to 5,
+            they're not sleepy and the refused to go to bed.""".format(self.sleep))
 
     def description(self):
         return """{} is snuggled at level {},
@@ -56,6 +65,3 @@ class Dragon:
 timmy = Dragon('Timmy', 5, 5, 0, 0, 0, 5, 1)
 
 print(timmy.description())
-print(timmy.time_passes())
-print(timmy.snuggle())
-print("Your dragons current status is: ", timmy.description())
