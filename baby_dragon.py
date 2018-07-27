@@ -37,6 +37,9 @@ class Dragon:
         else:
             return ("Your dragon's snuggle meter is FULL!")
 
+    def sleep_dragon(self):
+        pass
+
     def description(self):
         return """{} is snuggled at level {},
          has {} units of sleep,
