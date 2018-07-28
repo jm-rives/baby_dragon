@@ -73,6 +73,7 @@ class Dragon:
 
             Then then they smashed it with a look of glee.
             """)
+
     def life_stage(self):
         if self.maturity <= 2:
             return("baby")
@@ -80,6 +81,9 @@ class Dragon:
             return("(oh gawd) teenage")
         else:
             return("adult")
+
+    def flight(self):
+         pass
 
 
     def description(self):
