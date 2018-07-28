@@ -49,6 +49,31 @@ class Dragon:
             on a scale of zero to 5,
             they're not sleepy and the refused to go to bed.""".format(self.sleep))
 
+    def feed_dragon(self):
+        if self.hunger < 2:
+            self.hunger += 0.25
+            return("""
+            You let your dragon get too hungry!
+            Now You have to feed him more slowly
+            or they'll get sick!
+            """)
+        elif self.hunger < 4:
+            self.hunger += 1
+            return(
+            """Your dragon was hungry.
+            They ate all the food.
+            They're hunger level is {}
+            on a scale of zero to 5.""".format(self.hunger))
+        else:
+            return("""Your dragon wasn't hungry,
+            and they made a replica castle
+            out of the food you gave them.
+
+
+
+            Then then they smashed it with a look of glee.
+            """)
+
     def description(self):
         return """{} is snuggled at level {},
          has {} units of sleep,
@@ -63,5 +88,7 @@ class Dragon:
 
 # test code
 timmy = Dragon('Timmy', 5, 5, 0, 0, 0, 5, 1)
-
+for i in range(0, 4):
+    timmy.time_passes()
 print(timmy.description())
+print(timmy.feed_dragon())
