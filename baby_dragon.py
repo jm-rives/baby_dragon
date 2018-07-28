@@ -92,14 +92,15 @@ class Dragon:
          is {} level hungry,
          needs to use the bath room on a scale of {} on a scale of 0 - 5,
          has a fire power of {} on a scale of 0 - 5,
-         and has {} energy on a 0 - 5 scale.
+         and has {} energy on a 0 - 5 scale,
+         and they are a {} dragon.
         """.format(self.name, self.snuggled, self.sleep,
         self.hunger, self.cloaca,
-         self.fire, self.energy, self.maturity)
+         self.fire, self.energy, self.life_stage())
 
 
 # test code
 timmy = Dragon('Timmy', 5, 5, 0, 0, 0, 5, 1)
-for i in range(0, 4):
+for i in range(0, 7):
     timmy.time_passes()
 print(timmy.description())
