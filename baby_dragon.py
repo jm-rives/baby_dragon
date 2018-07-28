@@ -76,7 +76,7 @@ class Dragon:
     def life_stage(self):
         if self.maturity <= 2:
             return("baby")
-        elif self.maturity >2 and self.maturity < 5:
+        elif self.maturity >2 and self.maturity <= 4:
             return("(oh gawd) teenage")
         else:
             return("adult")
