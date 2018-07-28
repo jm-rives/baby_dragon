@@ -74,8 +74,13 @@ class Dragon:
             Then then they smashed it with a look of glee.
             """)
     def life_stage(self):
-        
-        pass
+        if self.maturity <= 2:
+            return("baby")
+        elif self.maturity >2 and self.maturity < 5:
+            return("(oh gawd) teenage")
+        else:
+            return("adult")
+
 
     def description(self):
         return """{} is snuggled at level {},
