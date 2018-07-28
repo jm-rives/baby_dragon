@@ -73,9 +73,8 @@ class Dragon:
 
             Then then they smashed it with a look of glee.
             """)
-    def matures(self):
-
-
+    def life_stage(self):
+        
         pass
 
     def description(self):
