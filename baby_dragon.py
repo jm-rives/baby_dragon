@@ -131,9 +131,11 @@ class Dragon:
         self.hunger, self.cloaca,
          self.fire, self.energy, self.life_stage())
 
+# need status prompt for hunger, bathroom, etcself.
 
 # test code
-timmy = Dragon('Timmy', 5, 5, 0, 0, 0, 5, 1)
-for i in range(0, 7):
-    timmy.time_passes()
+timmy = Dragon('Timmy', 5, 5, 0, 4, 0, 2, 2)
+# for i in range(0, 7):
+#     timmy.time_passes()
 print(timmy.description())
+print(timmy.flight())
