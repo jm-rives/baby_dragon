@@ -51,14 +51,17 @@ class Dragon:
 
     def feed_dragon(self):
         if self.hunger < 2:
+            self.energy = 0.5
             self.hunger += 0.25
             return("""
             You let your dragon get too hungry!
-            Now You have to feed him more slowly
+            They have almost no energy and
+            you'll have to feed him more slowly
             or they'll get sick!
             """)
         elif self.hunger < 4:
             self.hunger += 1
+            self.energy = 4
             return(
             """Your dragon was hungry.
             They ate all the food.
