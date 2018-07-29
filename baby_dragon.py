@@ -97,15 +97,21 @@ class Dragon:
                 return("Your dragon flies slow! Their energies low.")
             # energy good load high
             elif self.energy >= 3 and self.cloaca >= 3:
-                return("Your dragon flight is laggy! Their didn't 'go' before they went")
+                return("Your dragon flight is laggy! Their didn't 'go' before take off.")
             # engery low load high
-            elif self.energy >=3 and self.cloaca >= 3:
+            elif self.energy <=3 and self.cloaca >= 3:
                 return("Your dragon flaps it's wings futily. They too heavy and have no energy.")
+            else:
+                return("""
+                Your dragon rolls over on its bakc and feigns sleep.
+                They've been hanging out with the local cats far to often this week.
+                """)
         else:
             return("""
             Your dragon looks up at you with big puppy eyes and wiggles it's cute
             widdle wings and runs off as fast as it can on four legs.
-            The little was zooms back and forth with obvious joy flapping their wings furiously.
+            The little one zooms back and forth
+            with obvious joy flapping their wings furiously.
             They've got some growing to do be they can take flight.
             But they sure are cute at this age.
             """)
